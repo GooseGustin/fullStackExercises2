@@ -1,0 +1,14 @@
+create a new directory 
+navigate into it 
+create index.js file inside directory
+initialise directory and create package.json file: 
+    $ npm init 
+create server in index.js file, make it listen to on a particular port
+test server and check response in browser: 
+    $ npm start 
+    or 
+    $ node index.js
+install express dependency
+    $ node install express 
+install nodemon development dependency 
+    $ node install --save-dev nodemon
