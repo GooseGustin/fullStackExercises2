@@ -15,20 +15,6 @@ morgan.token('body', function (req, res) {
 
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :body'))
 
-// morgan(function (tokens, req, res) {
-//     console.log('Tokens:', tokens)
-//     return [
-//         tokens.method(req, res), 
-//         tokens.url(req, res), 
-//         tokens.status(req, res), 
-//         tokens.res(req, res, 'content-length'), '-', 
-//         tokens['response-time'](req, res), 'ms'
-//     ].join(' ')
-// })
-
-// // token creation 
-// morgan.token('type', )
-
 const requestLogger = (request, response, next) => {
     console.log('Method:', request.method) 
     console.log('Path:  ', request.path)
